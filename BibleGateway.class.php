@@ -22,7 +22,7 @@ class BibleGateway
 	{
 		if ($name === 'permalink')
 		{
-			return $this->permalink = self::URL.'/passage?'.http_build_query(['search' => $this->reference,'version' => $this->version]]);
+			return $this->permalink = self::URL.'/passage?'.http_build_query(['search' => $this->reference,'version' => $this->version]);
 		}
 		return $this->$name;
 	}
